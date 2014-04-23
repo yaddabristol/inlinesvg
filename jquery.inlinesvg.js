@@ -1,11 +1,13 @@
 (function($) {
 
+  // Modernizr 2.7.2
   supportsInlineSVG = function() {
     var div = document.createElement('div');
     div.innerHTML = '<svg/>';
     return (div.firstChild && div.firstChild.namespaceURI) == 'http://www.w3.org/2000/svg';
   };
 
+  // Modernizr 2.7.2
   supportsSVG = function () {
     return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
   };
@@ -42,7 +44,7 @@
     
     // No SVG Support? Replace with PNGs.
     if (!supportsSVG()) {
-      $('img.svg').attr('src', function() {
+      this.attr('src', function() {
         return $(this).attr('src').replace('.svg', '.png');
       }).removeClass('svg');
     }
