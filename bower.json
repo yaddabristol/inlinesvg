@@ -1,30 +1,28 @@
 {
-    "name": "inlinesvg",
-    "description": "Makes inline SVG images fall back to PNG if viewed in unsupported browser.",
-    "version": "1.0.0",
-    "dependencies": {
-        "jquery": ">=1.7"
-    },
-    "keywords": [
-        "svg",
-        "images",
-        "ui",
-        "jQuery",
-        "jquery-plugin"
-    ],
-    "authors": [
-        {
-            "name": "Jake Gully",
-            "url": "https://github.com/mrchimp",
-            "email": "jake@yadda.co.uk"
-        }
-    ],
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://www.opensource.org/licenses/mit-license.php"
-        }
-    ],
-    "homepage": "https://github.com/mrchimp/inlinesvg",
-    "main": "jquery.inlinesvg.js"
+  "name": "inlinesvg",
+  "homepage": "https://github.com/yaddabristol/inlinesvg",
+  "authors": [
+    "Jon MacKinnon <jon@yadda.co.uk>"
+  ],
+  "description": "Allows browsers that don't support SVG to fall back to PNG",
+  "main": "jquery.inlinesvg.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "images",
+    "svg",
+    "ui",
+    "jquery",
+    "jquery-plugin"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
